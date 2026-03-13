@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZJU-PL | Programming Languages and Automated Reasoning Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="#" class="logo">ZJU-PL</a>
+                <ul class="nav-links">
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#software">Software</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Programming Languages &<br>Automated Reasoning</h1>
+                <p class="hero-subtitle">Zhejiang University</p>
+                <p class="hero-description">
+                    We build tools and techniques to make software <strong>smarter</strong>, <strong>faster</strong>, and <strong>more secure</strong>.
+                </p>
+                <div class="hero-cta">
+                    <a href="#research" class="btn btn-primary">Our Research</a>
+                    <a href="#software" class="btn btn-secondary">Open Source</a>
+                </div>
+            </div>
+            <div class="hero-bg"></div>
+        </section>
+
+        <section id="research" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Research Areas</h2>
+                
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon">🔬</div>
+                        <h3>Program Analysis & Verification</h3>
+                        <p>Proving software correctness and catching catastrophic bugs before they ship.</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">⚙️</div>
+                        <h3>Program Synthesis & Optimizations</h3>
+                        <p>Automatically transforming specifications into optimized, production-ready code.</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">🧩</div>
+                        <h3>Logic & Automated Reasoning</h3>
+                        <p>Solving mathematical and verification challenges beyond human reach.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="software" class="section">
+            <div class="container">
+                <h2 class="section-title">Open Source Software</h2>
+                <p class="section-subtitle">Our tools are available on <a href="https://github.com/ZJU-PL" target="_blank">GitHub</a></p>
+                
+                <div class="software-grid">
+                    <div class="software-card">
+                        <div class="software-header">
+                            <h3 class="software-name"><a href="https://github.com/ZJU-PL/lotus" target="_blank">lotus</a></h3>
+                            <span class="software-lang">C++</span>
+                        </div>
+                        <p class="software-desc">A program analysis, verification, and optimization framework built on LLVM. Integrates path-sensitive analysis, alias analysis, and numerical analysis.</p>
+                        <div class="software-tags">
+                            <span class="tag">Verification</span>
+                            <span class="tag">LLVM</span>
+                            <span class="tag">Static Analysis</span>
+                        </div>
+                    </div>
+                    <div class="software-card">
+                        <div class="software-header">
+                            <h3 class="software-name"><a href="https://github.com/ZJU-PL/efmc" target="_blank">efmc</a></h3>
+                            <span class="software-lang">SMT</span>
+                        </div>
+                        <p class="software-desc">SMT-based software model checker with multiple verification engines including template-based verification, Houdini, k-induction, and IC3/PDR.</p>
+                        <div class="software-tags">
+                            <span class="tag">Model Checking</span>
+                            <span class="tag">SMT</span>
+                            <span class="tag">Verification</span>
+                        </div>
+                    </div>
+                    <div class="software-card">
+                        <div class="software-header">
+                            <h3 class="software-name"><a href="https://github.com/ZJU-PL/aria" target="_blank">aria</a></h3>
+                            <span class="software-lang">Python</span>
+                        </div>
+                        <p class="software-desc">Library for constraint solving, theorem proving, and symbolic computation. Powers various program analysis and verification tools.</p>
+                        <div class="software-tags">
+                            <span class="tag">SMT</span>
+                            <span class="tag">Symbolic Computation</span>
+                            <span class="tag">Reasoning</span>
+                        </div>
+                    </div>
+                    <div class="software-card">
+                        <div class="software-header">
+                            <h3 class="software-name"><a href="https://github.com/ZJU-PL/pyflow" target="_blank">pyflow</a></h3>
+                            <span class="software-lang">Python</span>
+                        </div>
+                        <p class="software-desc">Static analysis framework for Python with dependence graph construction, shape analysis, code optimization, and bug checking.</p>
+                        <div class="software-tags">
+                            <span class="tag">Static Analysis</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Dependence Analysis</span>
+                        </div>
+                    </div>
+                    <div class="software-card">
+                        <div class="software-header">
+                            <h3 class="software-name"><a href="https://github.com/ZJU-PL/veripy" target="_blank">veripy</a></h3>
+                            <span class="software-lang">Python</span>
+                        </div>
+                        <p class="software-desc">Auto-active verifier for Python programs with symbolic execution and invariant inference.</p>
+                        <div class="software-tags">
+                            <span class="tag">Verification</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Symbolic Execution</span>
+                        </div>
+                    </div>
+                    <div class="software-card">
+                        <div class="software-header">
+                            <h3 class="software-name"><a href="https://github.com/ZJU-PL/jsflow" target="_blank">jsflow</a></h3>
+                            <span class="software-lang">Python</span>
+                        </div>
+                        <p class="software-desc">JavaScript static and dynamic analysis tool for vulnerability detection and exploit generation.</p>
+                        <div class="software-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Dynamic Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ZJU Programming Languages and Automated Reasoning Group. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
