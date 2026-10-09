@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software | ZJU-PL Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">ZJU-PL</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="software.html" class="active">Software</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Open Source Software</h1>
+                <p class="page-description">
+                    We build and maintain open-source frameworks for program analysis, automated reasoning, and compiler optimization. All projects are available on <a href="https://github.com/ZJU-PL" target="_blank" rel="noopener">GitHub</a>.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="software-grid">
+                    <div id="lotus" class="software-card">
+                        <div class="software-domain">Program Analysis & Verification</div>
+                        <div class="software-header">
+                            <h3 class="software-name"><a href="https://github.com/ZJU-PL/lotus" target="_blank" rel="noopener">lotus</a></h3>
+                            <span class="software-lang">C++ / LLVM</span>
+                        </div>
+                        <p class="software-desc">
+                            A versatile and industrial-scale program analysis, verification, and optimization framework built on LLVM. Integrates path-sensitive value-flow analysis, pointer analysis, numerical abstract domains, and LLVM-IR transformations.
+                        </p>
+                        <div class="software-tags">
+                            <span class="tag">Program Analysis</span>
+                            <span class="tag">LLVM</span>
+                            <span class="tag">Static Analysis</span>
+                            <span class="tag">Optimization</span>
+                        </div>
+                    </div>
+
+                    <div id="pyflow" class="software-card">
+                        <div class="software-domain">Program Analysis & Verification</div>
+                        <div class="software-header">
+                            <h3 class="software-name"><a href="https://github.com/ZJU-PL/pyflow" target="_blank" rel="noopener">pyflow</a></h3>
+                            <span class="software-lang">Python</span>
+                        </div>
+                        <p class="software-desc">
+                            An interprocedural static analysis framework for Python featuring shape analysis, pointer analysis, IFDS/IDE dataflow analysis, and security vulnerability checking. Available on PyPI as <code>pyflow-analysis</code>.
+                        </p>
+                        <div class="software-tags">
+                            <span class="tag">Static Analysis</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">IFDS</span>
+                            <span class="tag">PyPI</span>
+                        </div>
+                    </div>
+
+                    <div id="aria" class="software-card">
+                        <div class="software-domain">Logic & Automated Reasoning</div>
+                        <div class="software-header">
+                            <h3 class="software-name"><a href="https://github.com/ZJU-PL/aria" target="_blank" rel="noopener">aria</a></h3>
+                            <span class="software-lang">Python / SMT</span>
+                        </div>
+                        <p class="software-desc">
+                            Automated reasoning infrastructure and applications library for constraint solving, SMT theories, theorem proving, and symbolic computation. Available on PyPI as <code>pyaria</code>.
+                        </p>
+                        <div class="software-tags">
+                            <span class="tag">Automated Reasoning</span>
+                            <span class="tag">SMT</span>
+                            <span class="tag">Constraint Solving</span>
+                            <span class="tag">PyPI</span>
+                        </div>
+                    </div>
+
+                    <div id="repoaudit" class="software-card">
+                        <div class="software-domain">Program Analysis & Security</div>
+                        <div class="software-header">
+                            <h3 class="software-name"><a href="https://github.com/ZJU-PL/RepoAudit" target="_blank" rel="noopener">RepoAudit++</a></h3>
+                            <span class="software-lang">Python</span>
+                        </div>
+                        <p class="software-desc">
+                            An autonomous LLM-agent framework for large-scale, repository-level code auditing, vulnerability discovery, and security verification across complex codebases.
+                        </p>
+                        <div class="software-tags">
+                            <span class="tag">Code Auditing</span>
+                            <span class="tag">LLM Agent</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Static Analysis</span>
+                        </div>
+                    </div>
+
+                    <div id="invfinder" class="software-card">
+                        <div class="software-domain">Program Analysis & Verification</div>
+                        <div class="software-header">
+                            <h3 class="software-name"><a href="https://github.com/ZJU-PL/InvFinder" target="_blank" rel="noopener">InvFinder</a></h3>
+                            <span class="software-lang">SMT</span>
+                        </div>
+                        <p class="software-desc">
+                            Automated tool for synthesizing best inductive loop invariants over bit-vector relations with formal guarantees (artifact of TOSEM 2026 paper).
+                        </p>
+                        <div class="software-tags">
+                            <span class="tag">Invariant Synthesis</span>
+                            <span class="tag">SMT</span>
+                            <span class="tag">Verification</span>
+                            <span class="tag">Bit-Vector</span>
+                        </div>
+                    </div>
+
+                    <div id="hintpilot" class="software-card">
+                        <div class="software-domain">Program Synthesis & Optimization</div>
+                        <div class="software-header">
+                            <h3 class="software-name"><a href="https://github.com/ZJU-PL/hintpilot" target="_blank" rel="noopener">hintpilot</a></h3>
+                            <span class="software-lang">Python</span>
+                        </div>
+                        <p class="software-desc">
+                            LLM-based compiler hint synthesis framework for automated code optimization, guiding compiler transformations and performance tuning (Findings of ACL 2026).
+                        </p>
+                        <div class="software-tags">
+                            <span class="tag">Optimization</span>
+                            <span class="tag">LLM Synthesis</span>
+                            <span class="tag">Compilers</span>
+                            <span class="tag">Performance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ZJU Programming Languages and Automated Reasoning Group. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

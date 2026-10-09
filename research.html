@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | ZJU-PL Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">ZJU-PL</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html" class="active">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="software.html">Software</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Research Areas</h1>
+                <p class="page-description">
+                    We develop principled techniques and tools across programming languages, software engineering, and cybersecurity to make software fast, reliable, and secure.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <!-- Pillar 1 -->
+                <div class="research-theme-block">
+                    <div class="research-theme-header">
+                        <div class="research-theme-icon">🔬</div>
+                        <h2 class="research-theme-title">Program Analysis and Verification</h2>
+                    </div>
+                    <p class="research-card-desc">
+                        Proving software correctness and eliminating deep vulnerabilities. We develop scalable static and dynamic analyses—encompassing path-sensitive value flow, context-sensitive alias analysis, numerical abstract interpretation, concurrency analysis, and directed fuzzing across complex codebases.
+                    </p>
+
+                    <div class="research-subtopics-grid">
+                        <div class="subtopic-card">
+                            <h4>Path-Sensitive Analysis</h4>
+                            <p>Path-sensitive sparse value-flow analysis, fused analyses without path explosion, and parallel collection of realizable conditions.</p>
+                        </div>
+                        <div class="subtopic-card">
+                            <h4>Pointer & Alias Analysis</h4>
+                            <p>Modular and scalable pointer analysis for C/C++ and Python, SIMD-accelerated bit-vectors, and offline compiler simplifications.</p>
+                        </div>
+                        <div class="subtopic-card">
+                            <h4>Numerical Analysis</h4>
+                            <p>Numerical abstract interpretation, combined bit-level and word-level abstractions, and invariant inference.</p>
+                        </div>
+                        <div class="subtopic-card">
+                            <h4>Concurrency & Value-Flow</h4>
+                            <p>Detecting subtle concurrency bugs, inter-thread data races, and lock misuse vulnerabilities in systems code.</p>
+                        </div>
+                        <div class="subtopic-card">
+                            <h4>Directed Fuzzing</h4>
+                            <p>Provable path pruning, polyhedral abstraction, and multi-target directed greybox fuzzing for vulnerability discovery.</p>
+                        </div>
+                    </div>
+
+                    <div class="research-tools">
+                        <span>Associated Systems:</span>
+                        <a href="software.html#lotus">lotus</a>
+                        <a href="software.html#pyflow">pyflow</a>
+                        <a href="software.html#invfinder">InvFinder</a>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="research-theme-block">
+                    <div class="research-theme-header">
+                        <div class="research-theme-icon">⚙️</div>
+                        <h2 class="research-theme-title">Program Synthesis and Optimization</h2>
+                    </div>
+                    <p class="research-card-desc">
+                        Automatically transforming specifications into optimized, production-ready code. We combine formal methods with AI/LLMs to synthesize provably correct code translators, intermediate representations, and optimal compiler optimization hints to maximize software performance.
+                    </p>
+
+                    <div class="research-subtopics-grid">
+                        <div class="subtopic-card">
+                            <h4>Compiler Hint Synthesis</h4>
+                            <p>LLM-based compiler hint synthesis framework to guide compiler transformation passes and performance tuning.</p>
+                        </div>
+                        <div class="subtopic-card">
+                            <h4>IR & Code Translation</h4>
+                            <p>Empowering version compatibility and verified model synchronization via formal bidirectional transformation.</p>
+                        </div>
+                        <div class="subtopic-card">
+                            <h4>Container & Structure Synthesis</h4>
+                            <p>Complexity-guided container replacement synthesis and data structure optimization for high-performance applications.</p>
+                        </div>
+                        <div class="subtopic-card">
+                            <h4>Equivalence Verification</h4>
+                            <p>Verifying semantic equivalence of data constraints and synthesized program transformations in mission-critical systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="research-tools">
+                        <span>Associated Systems:</span>
+                        <a href="software.html#hintpilot">hintpilot</a>
+                        <a href="software.html#repoaudit">RepoAudit++</a>
+                        <a href="software.html#lotus">lotus</a>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="research-theme-block">
+                    <div class="research-theme-header">
+                        <div class="research-theme-icon">🧩</div>
+                        <h2 class="research-theme-title">Logic and Automated Reasoning</h2>
+                    </div>
+                    <p class="research-card-desc">
+                        Solving complex mathematical and verification challenges beyond human reach. We advance automated reasoning by developing fast decision procedures, constraint solving algorithms (bit-vectors, strings, non-linear arithmetic), and symbolic automata models that empower modern theorem proving.
+                    </p>
+
+                    <div class="research-subtopics-grid">
+                        <div class="subtopic-card">
+                            <h4>Constraint Solving (SMT)</h4>
+                            <p>High-performance decision procedures for bit-vectors, strings, floating-point, arrays, and theory combinations.</p>
+                        </div>
+                        <div class="subtopic-card">
+                            <h4>Symbolic Automata</h4>
+                            <p>Precise symbolic automata models and extended regular expression reasoning for stateful software verification.</p>
+                        </div>
+                        <div class="subtopic-card">
+                            <h4>SMT Simplifications</h4>
+                            <p>Compiler optimization-based formula simplifications and learned splitting heuristics for accelerated parallel solving.</p>
+                        </div>
+                        <div class="subtopic-card">
+                            <h4>First-Order Decision Procedures</h4>
+                            <p>Mechanized deduction algorithms and efficient decision procedures underlying software model checking.</p>
+                        </div>
+                    </div>
+
+                    <div class="research-tools">
+                        <span>Associated Systems:</span>
+                        <a href="software.html#aria">aria</a>
+                        <a href="software.html#invfinder">InvFinder</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ZJU Programming Languages and Automated Reasoning Group. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
